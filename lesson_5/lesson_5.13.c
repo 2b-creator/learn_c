@@ -1,34 +1,26 @@
 #include <stdio.h>
-int main()
+
+int main(void)
 {
-    int a = 2;
-    if (a == 1)
+    int day = 2;
+    switch (day)
     {
+    case 1:
         printf("Monday\n");
-    }
-    else if (a == 2)
-    {
+    case 2:
         printf("Tuesday\n");
-    }
-    else if (a == 3)
-    {
+    case 3:
         printf("Wednesday\n");
-    }
-    else if (a == 4)
-    {
+    case 4:
         printf("Thursday\n");
-    }
-    else if (a == 5)
-    {
+    case 5:
         printf("Friday\n");
-    }
-    else if (a == 6)
-    {
+    case 6:
         printf("Saturday\n");
-    }
-    else if (a == 7)
-    {
+    case 7:
         printf("Sunday\n");
+    default:
+        break;
     }
     return 0;
 }
